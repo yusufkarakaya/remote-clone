@@ -4,6 +4,7 @@ import Nav from '../components/Nav';
 import Header from '../components/Header';
 import ContainerBanner from '../components/ContainerBanner';
 import Container from '../components/Container';
+import HRManagement from '../components/HRManagement';
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <Header />
       <ContainerBanner />
       <Container />
+      <HRManagement />
     </div>
   );
 }

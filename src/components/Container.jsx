@@ -9,12 +9,12 @@ import ContractAgreements from '../assets/ContractAgreements.svg';
 
 function Container() {
   const [activeTab, setActive] = useState('TimeTracking');
-  console.log(activeTab);
 
   return (
     <Wrapper>
       <Left>
         <Button
+          type='button'
           onClick={() => {
             setActive('TimeTracking');
           }}
@@ -23,6 +23,7 @@ function Container() {
           Time-Tracking
         </Button>
         <Button
+          type='button'
           onClick={() => {
             setActive('Invoicing');
           }}
@@ -31,6 +32,7 @@ function Container() {
           Invoicing
         </Button>
         <Button
+          type='button'
           onClick={() => {
             setActive('ComplianceDocs');
           }}
@@ -39,6 +41,7 @@ function Container() {
           Compliance Documents
         </Button>
         <Button
+          type='button'
           onClick={() => {
             setActive('ContractAgreements');
           }}
