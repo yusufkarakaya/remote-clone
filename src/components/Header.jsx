@@ -64,7 +64,7 @@ function Header() {
         </Card>
         <Card>
           <div>
-            <img src={HoursTracked} alt='' />
+            <img src={HRToolsUsed} alt='' />
             <h4>250K+</h4>
           </div>
           <div>

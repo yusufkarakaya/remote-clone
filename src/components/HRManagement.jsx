@@ -75,6 +75,8 @@ const Wrapper = styled.div`
   text-align: center;
   display: flex;
   justify-content: center;
+  margin-bottom: 80px;
+  width: 100%;
 
   h5 {
     font-size: 32px;
@@ -102,13 +104,17 @@ const Wrapper = styled.div`
 
 const Container = styled.div`
   padding: 2rem 2rem;
+  padding-right: 3rem;
   max-width: 1200px;
   margin-top: 70px;
+  margin-bottom: 80px;
+  margin-right: 3.6rem;
 `;
 
 const ContainerBoxes = styled.div`
   display: flex;
   gap: 6rem;
+  width: 1200px;
 `;
 
 const MainBox = styled.div`
