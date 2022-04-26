@@ -6,6 +6,7 @@ import ContainerBanner from '../components/ContainerBanner';
 import Container from '../components/Container';
 import HRManagement from '../components/HRManagement';
 import Media from '../components/Media';
+import Footer from '../components/Footer';
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
       <Container />
       <HRManagement />
       <Media />
+      <Footer />
     </div>
   );
 }
