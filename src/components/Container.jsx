@@ -12,82 +12,89 @@ function Container() {
 
   return (
     <Wrapper>
-      <Left>
-        <Button
-          type='button'
-          onClick={() => {
-            setActive('TimeTracking');
-          }}
-          className={activeTab === 'TimeTracking' ? 'active' : ''}
-        >
-          Time-Tracking
-        </Button>
-        <Button
-          type='button'
-          onClick={() => {
-            setActive('Invoicing');
-          }}
-          className={activeTab === 'Invoicing' ? 'active' : ''}
-        >
-          Invoicing
-        </Button>
-        <Button
-          type='button'
-          onClick={() => {
-            setActive('ComplianceDocs');
-          }}
-          className={activeTab === 'ComplianceDocs' ? 'active' : ''}
-        >
-          Compliance Documents
-        </Button>
-        <Button
-          type='button'
-          onClick={() => {
-            setActive('ContractAgreements');
-          }}
-          className={activeTab === 'ContractAgreements' ? 'active' : ''}
-        >
-          Contract Agreements
-        </Button>
-      </Left>
+      <div>
+        <Left>
+          <Button
+            type='button'
+            onClick={() => {
+              setActive('TimeTracking');
+            }}
+            className={activeTab === 'TimeTracking' ? 'active' : ''}
+          >
+            Time-Tracking
+          </Button>
+          <Button
+            type='button'
+            onClick={() => {
+              setActive('Invoicing');
+            }}
+            className={activeTab === 'Invoicing' ? 'active' : ''}
+          >
+            Invoicing
+          </Button>
+          <Button
+            type='button'
+            onClick={() => {
+              setActive('ComplianceDocs');
+            }}
+            className={activeTab === 'ComplianceDocs' ? 'active' : ''}
+          >
+            Compliance Documents
+          </Button>
+          <Button
+            type='button'
+            onClick={() => {
+              setActive('ContractAgreements');
+            }}
+            className={activeTab === 'ContractAgreements' ? 'active' : ''}
+          >
+            Contract Agreements
+          </Button>
+        </Left>
 
-      {activeTab === 'TimeTracking' && (
-        <Right>
-          <h3>Time-Tracking Designed for Independent Contractors</h3>
-          <h4>
-            Integrate your time-tracking tool to automatically generate payments
-          </h4>
-          <img src={TimeTracker} alt='Time Tracker' />
-          <button>Learn more</button>
-        </Right>
-      )}
-      {activeTab === 'Invoicing' && (
-        <Right>
-          <h3>Invoicing</h3>
-          <h4>
-            Create and pay invoices based on your team’s working hours and
-            expenditures
-          </h4>
-          <img src={Invoicing} alt='Invoicing' />
-          <button>Learn more</button>
-        </Right>
-      )}
-      {activeTab === 'ComplianceDocs' && (
-        <Right>
-          <h3>Compliance Designed for Independent Contractors</h3>
-          <h4>Stay compliant by generating and managing tax and legal forms</h4>
-          <img src={ComplianceDocs} alt='Invoicing' />
-          <button>Learn more</button>
-        </Right>
-      )}
-      {activeTab === 'ContractAgreements' && (
-        <Right>
-          <h3>Contracts Designed for Independent Contractors</h3>
-          <h4>Manage documents and collect signatures for remote employees</h4>
-          <img src={ContractAgreements} alt='Invoicing' />
-          <button>Learn more</button>
-        </Right>
-      )}
+        {activeTab === 'TimeTracking' && (
+          <Right>
+            <h3>Time-Tracking Designed for Independent Contractors</h3>
+            <h4>
+              Integrate your time-tracking tool to automatically generate
+              payments
+            </h4>
+            <img src={TimeTracker} alt='Time Tracker' />
+            <button>Learn more</button>
+          </Right>
+        )}
+        {activeTab === 'Invoicing' && (
+          <Right>
+            <h3>Invoicing</h3>
+            <h4>
+              Create and pay invoices based on your team’s working hours and
+              expenditures
+            </h4>
+            <img src={Invoicing} alt='Invoicing' />
+            <button>Learn more</button>
+          </Right>
+        )}
+        {activeTab === 'ComplianceDocs' && (
+          <Right>
+            <h3>Compliance Designed for Independent Contractors</h3>
+            <h4>
+              Stay compliant by generating and managing tax and legal forms
+            </h4>
+            <img src={ComplianceDocs} alt='Invoicing' />
+            <button>Learn more</button>
+          </Right>
+        )}
+        {activeTab === 'ContractAgreements' && (
+          <Right>
+            <h3>Contracts Designed for Independent Contractors</h3>
+            <h4>
+              Manage documents and collect signatures for remote employees
+            </h4>
+            <img src={ContractAgreements} alt='Invoicing' />
+            <button>Learn more</button>
+          </Right>
+        )}
+      </div>
     </Wrapper>
   );
 }
@@ -98,6 +105,7 @@ const Wrapper = styled.div`
   gap: 3rem;
   background-color: rgba(45, 70, 193, 1);
   width: 100%;
+  min-height: 750px;
   padding: 2rem;
   background-image: url(https://res.cloudinary.com/hebu10lmu/image/upload/c_scale,q_auto/v1603792530/www/forestry/fingerprint_tg1rou.svg);
 
@@ -105,10 +113,17 @@ const Wrapper = styled.div`
     color: rgb(45, 193, 140);
     text-decoration: underline;
   }
+  div {
+    display: flex;
+    width: 1200px;
+  }
 `;
 
 const Button = styled.button`
-  padding: 1rem;
+  margin-top: 1rem;
+  padding-bottom: 0.5rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
   border: none;
   color: white;
   background-color: transparent;
@@ -129,6 +144,7 @@ const Right = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 2rem;
+  min-width: 860px;
 
   h3,
   h4 {
