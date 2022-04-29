@@ -1,5 +1,6 @@
 import React from 'react';
-import NavMenus from './NavMenus';
+
+import Burger from './Burger';
 
 import styled from 'styled-components';
 import logo from '../../assets/remote-team-blue-logo.svg';
@@ -12,7 +13,7 @@ function Nav() {
       </Logo>
       <div>
         <Menus>
-          <NavMenus />
+          <Burger />
         </Menus>
       </div>
       <SignButton>
@@ -28,11 +29,20 @@ const Wrapper = styled.div`
   margin: 0rem 20rem;
   padding: 2rem;
   min-height: 110px;
+  align-items: center;
+
+  @media (max-width: 1400px) {
+    justify-content: center;
+    gap: 10rem;
+    margin: 0rem 0rem;
+    align-items: center;
+  }
 
   @media (max-width: 768px) {
     justify-content: center;
     padding: 0;
     margin: 0;
+    gap: 2rem;
   }
 
   ul {
