@@ -2,12 +2,10 @@
 
 #### Example:
 
-TweetWorld 
+Remote Team clone home 
 
-An application used to filter data form Twitter based on user preference, built with React, Redux, JavaScript, and CSS.
+An application used to built with React, JavaScript, and CSS.
 
-## Project Status
-(only necessary if incomplete)
 
 #### Example:
 
