@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-
 //images
 import CheckInApp from '../assets/Check-in_App.svg';
 import CompensationManagement from '../assets/compensation-management.svg';
@@ -109,12 +108,40 @@ const Container = styled.div`
   margin-top: 70px;
   margin-bottom: 80px;
   margin-right: 3.6rem;
+
+  @media (max-width: 768px) {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
 `;
 
 const ContainerBoxes = styled.div`
   display: flex;
   gap: 6rem;
   width: 1200px;
+
+  @media (max-width: 768px) {
+    width: 550px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  div {
+    @media (max-width: 768px) {
+      margin-top: 5px;
+      width: 150px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0rem;
+    }
+  }
 `;
 
 const MainBox = styled.div`

@@ -1,6 +1,8 @@
 import React from 'react';
+import NavMenus from './NavMenus';
+
 import styled from 'styled-components';
-import logo from '../assets/remote-team-blue-logo.svg';
+import logo from '../../assets/remote-team-blue-logo.svg';
 
 function Nav() {
   return (
@@ -8,14 +10,11 @@ function Nav() {
       <Logo>
         <img src={logo} alt='logo' />
       </Logo>
-      <Menu>
-        <ul>
-          <li>Independent Contractors</li>
-          <li>Global Payroll</li>
-          <li>HR Tools</li>
-          <li>Pricing</li>
-        </ul>
-      </Menu>
+      <div>
+        <Menus>
+          <NavMenus />
+        </Menus>
+      </div>
       <SignButton>
         <button>Sign In</button>
       </SignButton>
@@ -29,6 +28,12 @@ const Wrapper = styled.div`
   margin: 0rem 20rem;
   padding: 2rem;
   min-height: 110px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
 
   ul {
     display: flex;
@@ -53,7 +58,7 @@ const Logo = styled.div`
   cursor: pointer;
 `;
 
-const Menu = styled.div`
+const Menus = styled.div`
   display: flex;
   align-items: center;
   text-align: center;

@@ -113,9 +113,15 @@ const Wrapper = styled.div`
     color: rgb(45, 193, 140);
     text-decoration: underline;
   }
+
   div {
     display: flex;
     width: 1200px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 `;
 
@@ -132,6 +138,11 @@ const Button = styled.button`
   color: rgba(255, 255, 255, 0.75);
   cursor: pointer;
   font-weight: 600;
+
+  @media (max-width: 768px) {
+    margin-top: 0rem;
+    margin-bottom: 0.2rem;
+  }
 `;
 
 const Left = styled.div`
@@ -150,6 +161,11 @@ const Right = styled.div`
   h4 {
     text-align: left;
     padding-bottom: 1rem;
+
+    @media (max-width: 768px) {
+      text-align: center !important;
+      width: 550px;
+    }
   }
   h3 {
     font-size: 2rem;
@@ -183,6 +199,15 @@ const Right = styled.div`
     font-weight: 600;
     font-family: Nunito Sans, sans-serif;
     border: none;
+
+    @media (max-width: 768px) {
+      margin: 1.5rem auto;
+    }
+  }
+  img {
+    @media (max-width: 768px) {
+      width: 510px;
+    }
   }
 `;
 

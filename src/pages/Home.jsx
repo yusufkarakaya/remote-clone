@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from '../components/banner/Announcement';
-import Nav from '../components/Nav';
+import Nav from '../components/Nav/Nav';
 import Header from '../components/Header';
 import ContainerBanner from '../components/ContainerBanner';
 import Container from '../components/Container';

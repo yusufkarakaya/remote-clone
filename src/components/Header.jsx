@@ -88,6 +88,10 @@ const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
   div {
     padding-left: 20px;
   }
@@ -120,6 +124,19 @@ const SubContainer = styled.div`
   justify-content: center;
   color: white;
   gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+    div {
+      padding: 0.2rem;
+      text-align: center;
+      justify-content: center;
+    }
+  }
 `;
 
 const Card = styled.div`

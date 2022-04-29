@@ -90,6 +90,10 @@ const Container = styled.div`
 
   h1 {
     text-align: left;
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
   }
 `;
 
@@ -101,6 +105,10 @@ const Boxes = styled.div`
   display: flex;
   flex-direction: row;
   gap: 1.2rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const Box = styled.div`
@@ -113,6 +121,11 @@ const Box = styled.div`
   padding-bottom: 2rem;
   border-radius: 20px;
   border-color: rgba(0, 0, 0, 0.07);
+
+  @media (max-width: 768px) {
+    width: 80%;
+    margin: auto;
+  }
 `;
 
 const RightText = styled.div`

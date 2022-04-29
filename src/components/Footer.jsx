@@ -117,6 +117,19 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+  div {
+    min-width: 210px;
+    text-align: center;
+    align-items: center;
+  }
+
   div:nth-child(3) {
     margin-top: 3.5rem;
   }
