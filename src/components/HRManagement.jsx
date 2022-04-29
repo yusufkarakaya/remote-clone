@@ -129,6 +129,7 @@ const ContainerBoxes = styled.div`
     justify-content: center;
     flex-direction: column;
     gap: 0rem;
+    margin: auto;
   }
 
   div {
