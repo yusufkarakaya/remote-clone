@@ -4,7 +4,7 @@
 
 Remote Team clone home 
 
-An application used to built with React, JavaScript, and CSS.
+An application used to be built with React, JavaScript, and CSS.
 
 ## Project Screen Shot(s)
 
@@ -34,16 +34,3 @@ To Visit App:
 
 `localhost:3000/`  
 
-## Reflection
-
-  - What was the context for this project? (ie: was this a side project? was this for Turing? was this for an experiment?)
-  - What did you set out to build?
-  - Why was this project challenging and therefore a really good learning experience?
-
-#### Example:  
-
-This was a 2 weeks project. It was a side project, I did this project for experiment.
-
-I wanted to build React clone landing page project for learning and experiment.
-
-Css side was challenged. I learned the layout structure.
